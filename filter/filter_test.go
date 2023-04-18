@@ -1,9 +1,10 @@
 package filter_test
 
 import (
-	internal "github.com/elimity-com/scim/internal/filter"
-	"github.com/elimity-com/scim/schema"
 	"testing"
+
+	internal "github.com/elimity-com/scim/filter"
+	"github.com/elimity-com/scim/schema"
 )
 
 func TestPathValidator_Validate(t *testing.T) {

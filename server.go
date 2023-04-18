@@ -2,15 +2,15 @@ package scim
 
 import (
 	"fmt"
-	f "github.com/elimity-com/scim/internal/filter"
-	"github.com/scim2/filter-parser/v2"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
 
 	"github.com/elimity-com/scim/errors"
+	f "github.com/elimity-com/scim/filter"
 	"github.com/elimity-com/scim/schema"
+	"github.com/scim2/filter-parser/v2"
 )
 
 const (

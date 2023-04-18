@@ -2,10 +2,11 @@ package filter_test
 
 import (
 	"fmt"
-	internal "github.com/elimity-com/scim/internal/filter"
+	"testing"
+
+	internal "github.com/elimity-com/scim/filter"
 	"github.com/elimity-com/scim/schema"
 	"github.com/scim2/filter-parser/v2"
-	"testing"
 )
 
 func TestValidatorString(t *testing.T) {
