@@ -41,11 +41,6 @@ func CommonAttributes() []CoreAttribute {
 					Mutability:  AttributeMutabilityReadOnly(),
 					Name:        "lastModified",
 				}),
-				SimpleReferenceParams(ReferenceParams{
-					Description: optional.NewString("The URI of the resource being returned."),
-					Mutability:  AttributeMutabilityReadOnly(),
-					Name:        "location",
-				}),
 				SimpleStringParams(StringParams{
 					CaseExact:   true,
 					Description: optional.NewString("The version of the resource being returned."),
