@@ -1,9 +1,7 @@
 package scim
 
 import (
-	"fmt"
 	"net/http"
-	"net/url"
 	"time"
 
 	"github.com/elimity-com/scim/optional"
@@ -66,7 +64,6 @@ func (r Resource) response(resourceType ResourceType) ResourceAttributes {
 
 	m := meta{
 		ResourceType: resourceType.Name,
-		Location:     fmt.Sprintf("%s/%s", resourceType.Endpoint[1:], url.PathEscape(r.ID)),
 	}
 
 	if r.Meta.Created != nil {
